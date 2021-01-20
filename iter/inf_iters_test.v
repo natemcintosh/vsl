@@ -1,7 +1,7 @@
 module iter
 
 fn test_counter_1() {
-	mut counter := new_counter_iter(10, 1)
+	mut counter := new_count_iter(10, 1)
 	assert counter.next() == 10
 	assert counter.next() == 11
 	assert counter.next() == 12
@@ -10,7 +10,7 @@ fn test_counter_1() {
 }
 
 fn test_counter_2() {
-	mut counter := new_counter_iter(0, 3)
+	mut counter := new_count_iter(0, 3)
 	assert counter.next() == 0
 	assert counter.next() == 3
 	assert counter.next() == 6
@@ -19,7 +19,7 @@ fn test_counter_2() {
 }
 
 fn test_counter_3() {
-	mut counter := new_counter_iter(3, -1)
+	mut counter := new_count_iter(3, -1)
 	assert counter.next() == 3
 	assert counter.next() == 2
 	assert counter.next() == 1
@@ -29,7 +29,7 @@ fn test_counter_3() {
 }
 
 fn test_counter_4() {
-	mut counter := new_counter_iter(4, -3)
+	mut counter := new_count_iter(4, -3)
 	assert counter.next() == 4
 	assert counter.next() == 1
 	assert counter.next() == -2

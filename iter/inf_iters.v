@@ -7,7 +7,7 @@ pub mut:
 	state f64
 }
 
-pub fn new_counter_iter(start f64, step f64) Counter {
+pub fn new_count_iter(start f64, step f64) Counter {
 	return Counter{
 		step: step
 		state: start
